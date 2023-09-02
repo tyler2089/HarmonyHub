@@ -1,0 +1,2 @@
+2 - Ability to play a song
+3 - Mobile Compatability // Overall formatting (artist display)

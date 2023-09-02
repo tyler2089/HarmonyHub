@@ -1,0 +1,123 @@
+.toolbar {
+  margin-top: 20px;
+  background-color: rgba(33, 40, 66, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+  box-shadow: 3px 3px 5px rgb(10, 13, 22);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.toolbar > * {
+  background-color: rgba(33, 40, 66, 255);
+}
+
+.top-artist-display {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.top-artist-card {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0px;
+  background-color: rgba(25, 32, 55);
+  padding: 10px;
+  border-radius: 20px;
+}
+.top-artist-card h4 {
+  width: 50%;
+}
+.top-artist-card:hover {
+  background-color: rgb(50, 60, 100);
+  cursor: pointer;
+}
+
+.top-artist-card > * {
+  background-color: inherit;
+}
+.top-artist-card img {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+}
+
+.top-tracks-display {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.top-tracks-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0px;
+  background-color: rgba(25, 32, 55);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.top-tracks-card:hover {
+  background-color: rgb(50, 60, 100);
+  cursor: pointer;
+}
+
+.top-tracks-card > * {
+  background-color: inherit;
+}
+.top-tracks-card h4 {
+  width: 50%;
+}
+.top-tracks-card img {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+}
+.userInfoDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.userInfoDisplay h3 {
+  text-decoration: underline;
+}
+#user-profile-picture {
+  width: 110px;
+  height: 110px;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+.userInfoDisplay > * {
+  background-color: rgba(33, 40, 66, 255);
+}
+
+#create-a-playlist-button {
+  padding: 30px;
+  background-color: rgba(25, 32, 55);
+  border-radius: 20px;
+}
+
+#create-a-playlist-button:hover {
+  background-color: rgb(50, 60, 100);
+  cursor: pointer;
+}

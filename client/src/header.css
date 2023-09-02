@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 10%;
+  background-color: rgba(33, 40, 66, 255);
+  box-shadow: 3px 3px 5px rgb(10, 13, 22);
+}
+
+.header > * {
+  background-color: rgba(33, 40, 66, 255);
+  margin: 0px;
+  padding: 0px;
+}
+.header h1 {
+  transition: all 0.2s ease-in-out;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.header h1:hover {
+  color: rgba(116, 103, 239, 255);
+  background-color: rgb(50, 60, 100);
+  cursor: pointer;
+}
+
+.header input[type="text"] {
+  background-color: white;
+  font-size: 2em;
+  height: 43px;
+  border: 0px solid;
+  color: black;
+  outline: 0px;
+}
+
+.header button {
+  height: 45px;
+  font-size: 2em;
+  border: 2px solid white;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.header button:hover {
+  background-color: rgba(116, 103, 239, 255);
+  cursor: pointer;
+}
+
+.header .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

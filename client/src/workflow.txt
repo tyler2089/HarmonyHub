@@ -1,0 +1,22 @@
+Workflow:
+
+User Authentication
+Access Token
+
+Tool Bar
+
+Search Bar / Search function
+
+
+Mobile Compatibility
+
+
+Display function
+
+
+Play function
+
+
+Playlist Creator
+
+

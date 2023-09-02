@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat&display=swap");
+
+.album-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 20px;
+}
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  height: 200px;
+  padding: 30px;
+  margin: 20px 10px;
+}
+
+.album-card:hover {
+  background-color: rgb(50, 60, 100);
+  cursor: pointer;
+}
+
+.album-card > * {
+  background-color: inherit;
+}
+.album-display img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  height: 200px;
+  padding: 30px;
+  margin: 20px 10px;
+}
+
+.artist-card > * {
+  background-color: inherit;
+}
+.artist-card:hover {
+  background-color: rgb(50, 60, 100);
+  cursor: pointer;
+}
+
+.artist-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.artist-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 20px;
+  flex-wrap: wrap;
+}
+
+.artist-page-display {
+  position: relative;
+}
+.artist-page-display img {
+  width: 100%;
+  filter: brightness(40%);
+}
+
+.artist-page-info {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  top: 10%;
+  background-color: transparent;
+  width: 100%;
+}
+
+.artist-page-info > * {
+  background-color: transparent;
+}
+.artist-page-info h1 {
+  background-color: transparent;
+  font-size: 4em;
+  font-family: "Bungee", cursive !important;
+  margin: 0px;
+}
+
+.artist-top-song-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: rgba(25, 32, 55, 0.8);
+}
+
+.artist-top-song-card h4 {
+  width: 40%;
+}
+
+.artist-top-song-card h3 {
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.artist-top-song-card h3:hover {
+  color: rgba(116, 103, 239, 255);
+  background-color: white;
+  cursor: pointer;
+}
+.artist-top-song-card:hover {
+  background-color: rgb(50, 60, 100);
+  cursor: pointer;
+}
+
+.artist-top-song-card > * {
+  background-color: transparent;
+}
+.artist-top-song-card h5 {
+  width: 10%;
+}
+
+.artist-top-song-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: brightness(100%);
+}
+
+.artist-top-song-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.display-body {
+  background: rgb(33, 40, 66);
+  background: linear-gradient(
+    0deg,
+    rgba(33, 40, 66, 1) 0%,
+    rgba(33, 40, 66, 1) 62%,
+    rgba(0, 118, 142, 1) 100%
+  );
+  width: 85%;
+  margin: 20px;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgb(10, 13, 22);
+  overflow-y: scroll;
+}
+
+.display-body > * {
+  background-color: inherit;
+}
+
+.search-display {
+  margin: 20px;
+}
+
+.search-display h2 {
+  font-size: 2em;
+  padding: 0px;
+  margin: 0px 20px;
+  text-decoration: underline;
+}
+.search-display > * {
+  background-color: inherit;
+}
+
+.song-display {
+  margin: 20px;
+}
+.song-display > * {
+  background-color: inherit;
+}
+
+.song-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.song-card h3 {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.song-card .song-card-add-song {
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.song-card .song-card-add-song:hover {
+  color: rgba(116, 103, 239, 255);
+  background-color: white;
+  cursor: pointer;
+}
+.song-card:hover {
+  background-color: rgb(50, 60, 100);
+  cursor: pointer;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.song-info > * {
+  background-color: inherit;
+}
+.song-card > * {
+  background-color: inherit;
+  color: inherit;
+}
+
+.song-card img {
+  width: 50px;
+  height: 50px;
+}
+
+.song-card-info > * {
+  background-color: inherit;
+  color: inherit;
+}
+
+.song-card-info h5 {
+  padding: 5px;
+  margin: 0px;
+}
+.song-card-info h3 {
+  margin: 0px;
+  padding: 5px;
+}
