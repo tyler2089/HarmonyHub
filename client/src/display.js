@@ -1,5 +1,6 @@
 import "./display.css";
 import "./userplaylist.css";
+import { useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import addToPlaylist from "./actions/addtoplaylist";
 import removeFromPlaylist from "./actions/removefromplaylist";
@@ -7,7 +8,22 @@ function Display(props) {
   const searchStore = useSelector((state) => state.search);
   const playlistInfo = useSelector((state) => state.playlist);
   const dispatch = useDispatch();
+  let displayBodyRef = useRef();
 
+  waitForLoad();
+  function waitForLoad() {
+    if (window.innerHeight < 800) {
+      if (displayBodyRef.current) {
+        displayBodyRef.current.style.width = "100%";
+        displayBodyRef.current.style.margin = "0px";
+        return;
+      } else {
+        setTimeout(waitForLoad, 50);
+      }
+    } else {
+      return;
+    }
+  }
   // If searchStore.searchResult is populated, display songs, artists and tracks
   const SongDisplay = () => {
     if (searchStore.searchResult) {
@@ -252,7 +268,7 @@ function Display(props) {
     }
   };
   return (
-    <div className="display-body">
+    <div className="display-body" ref={displayBodyRef}>
       <SearchDisplay></SearchDisplay>
     </div>
   );

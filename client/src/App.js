@@ -78,7 +78,6 @@ function App() {
     });
   }
 
-  // On Rerender
   // Get AccessToken if Authorization Granted and Not already Retrieved
   useEffect(() => {
     // Fetch Access Token if Authorization is Granted

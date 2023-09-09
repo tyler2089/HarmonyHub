@@ -97,10 +97,12 @@ function Toolbar(props) {
     }
   };
 
-  return (
-    <div className="toolbar">
-      <Display></Display>
-    </div>
-  );
+  if (window.innerWidth > 800) {
+    return (
+      <div className="toolbar">
+        <Display></Display>
+      </div>
+    );
+  }
 }
 export default Toolbar;

@@ -7,6 +7,14 @@
   bottom: 0;
 }
 
+.audio-player-mobile {
+  background-color: rgba(33, 40, 66, 255);
+  box-shadow: 3px 3px 5px rgb(10, 13, 22);
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
 .audio-card {
   background-color: inherit;
   display: flex;
@@ -14,6 +22,13 @@
   align-items: start;
 }
 
+.audio-card-mobile {
+  background-color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 100%;
+}
 .audio-card-left {
   background-color: inherit;
   display: flex;
@@ -29,7 +44,7 @@
 .audio-card-left-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: start;
   color: white;
   background-color: inherit;
@@ -38,6 +53,7 @@
 
 .audio-card-left-info > * {
   background-color: inherit;
+  margin: 0px;
 }
 
 .audio-card-left-info h3 {

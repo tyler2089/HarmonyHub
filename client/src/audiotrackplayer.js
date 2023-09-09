@@ -3,7 +3,7 @@ import lottieWeb from "https://cdn.skypack.dev/lottie-web";
 import Play from "./play-button.png";
 import Pause from "./pause.png";
 import { useSelector, useDispatch } from "react-redux";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import toggleAudio from "./actions/toggleaudio";
 function AudioTrackPlayer(props) {
   // Variable Declaration
@@ -12,7 +12,7 @@ function AudioTrackPlayer(props) {
   const [trackCurrentTime, setTrackCurrentTime] = useState(0);
   const [trackDuration, setTrackDuration] = useState(0);
   const [volume, setVolume] = useState(1);
-
+  let audioCard = useRef();
   // Set Variable Initialization
   if (audio.audioElement) {
     audio.audioElement.addEventListener("volumechange", (event) => {
@@ -49,6 +49,39 @@ function AudioTrackPlayer(props) {
 
   // Main Display
   const AudioInfo = () => {
+    if (audio.audioInfo && window.innerHeight < 800) {
+      return (
+        <div className="audio-card-mobile">
+          <div className="audio-card-left">
+            <img src={audio.audioInfo.album.images[0].url}></img>
+            <div className="audio-card-left-info">
+              <h6>{audio.audioInfo.name}</h6>
+              <h7>{audio.audioInfo.artists[0].name}</h7>
+            </div>
+          </div>
+          <div className="player">
+            <PlayButton></PlayButton>
+            <div className="seeker-info">
+              <CurrentTime></CurrentTime>
+              <input
+                type="range"
+                min="0"
+                max={Math.floor(audio.audioElement.duration)}
+                defaultValue={trackCurrentTime}
+                onChange={() => {
+                  if (document.getElementById("track-seeker")) {
+                    audio.audioElement.currentTime =
+                      document.getElementById("track-seeker").value;
+                  }
+                }}
+                id="track-seeker"
+              ></input>
+              <h6>0:{trackDuration}</h6>
+            </div>
+          </div>
+        </div>
+      );
+    }
     if (audio.audioInfo) {
       return (
         <div className="audio-card">
@@ -102,11 +135,22 @@ function AudioTrackPlayer(props) {
       );
     }
   };
-  return (
-    <div className="audio-player">
-      <AudioInfo></AudioInfo>
-    </div>
-  );
+
+  if (window.innerWidth > 800) {
+    return (
+      <div className="audio-player">
+        <AudioInfo></AudioInfo>
+      </div>
+    );
+  }
+
+  if (window.innerWidth < 800) {
+    return (
+      <div className="audio-player-mobile">
+        <AudioInfo></AudioInfo>
+      </div>
+    );
+  }
 }
 
 export default AudioTrackPlayer;
