@@ -60,7 +60,7 @@ function App() {
       let scope =
         "user-read-private user-read-email user-top-read playlist-modify-public playlist-modify-private";
       const clientId = "6cd40c683f49475bb57d07ca668d4659";
-      const redirectUri = "http://localhost:3000";
+      const redirectUri = "https://tyler2089.github.io/HarmonyHub/";
 
       localStorage.setItem("code_verifier", codeVerifier);
 
