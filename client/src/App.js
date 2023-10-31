@@ -159,7 +159,11 @@ function App() {
 
   // Search Function
   async function search() {
-    if (accessToken) {
+    if (
+      accessToken &&
+      searchStore.userSearch !== "" &&
+      searchStore.userSearch !== null
+    ) {
       const result = await fetch(
         "https://api.spotify.com/v1/search?q=" +
           searchStore.userSearch +
