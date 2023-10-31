@@ -85,7 +85,7 @@ function App() {
     let code = urlParams.get("code");
     if (code !== null && accessToken === null) {
       const clientId = "6cd40c683f49475bb57d07ca668d4659";
-      const redirectUri = "http://localhost:3000";
+      const redirectUri = "https://tyler2089.github.io/HarmonyHub/";
       const urlParams = new URLSearchParams(window.location.search);
       code = urlParams.get("code");
       let _codeVerifier = localStorage.getItem("code_verifier");
