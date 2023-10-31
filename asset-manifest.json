@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.c0bb61cf.css",
-    "main.js": "/react-gh-pages/static/js/main.cd9438f9.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/react-gh-pages/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/play-button.png": "/react-gh-pages/static/media/play-button.34c275aac6faa4553334.png",
-    "index.html": "/react-gh-pages/index.html",
-    "main.c0bb61cf.css.map": "/react-gh-pages/static/css/main.c0bb61cf.css.map",
-    "main.cd9438f9.js.map": "/react-gh-pages/static/js/main.cd9438f9.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/react-gh-pages/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "/harmonyhub/static/css/main.c0bb61cf.css",
+    "main.js": "/harmonyhub/static/js/main.8b7346e6.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/harmonyhub/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/play-button.png": "/harmonyhub/static/media/play-button.34c275aac6faa4553334.png",
+    "index.html": "/harmonyhub/index.html",
+    "main.c0bb61cf.css.map": "/harmonyhub/static/css/main.c0bb61cf.css.map",
+    "main.8b7346e6.js.map": "/harmonyhub/static/js/main.8b7346e6.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/harmonyhub/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c0bb61cf.css",
-    "static/js/main.cd9438f9.js"
+    "static/js/main.8b7346e6.js"
   ]
 }
