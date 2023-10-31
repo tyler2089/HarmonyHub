@@ -1,5 +1,4 @@
 import "./audiotrackplayer.css";
-import lottieWeb from "https://cdn.skypack.dev/lottie-web";
 import Play from "./play-button.png";
 import Pause from "./pause.png";
 import { useSelector, useDispatch } from "react-redux";
